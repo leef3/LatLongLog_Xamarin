@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:background="#EEEEEE"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp"
+        android:layout_height="fill_parent">
+        <TextView
+            android:text="GPS Tracking"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:fontFamily="sans-serif-light"
+            android:textSize="17dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:text="STATUS:"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light" />
+                <TextView
+                    android:text="ACCURACY:"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light" />
+                <TextView
+                    android:text="LATITUDE:"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light" />
+                <TextView
+                    android:text="LONGITUDE:"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light" />
+                <TextView
+                    android:text="SPEED:"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light" />
+                <TextView
+                    android:text="TIME ELAPSED:"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light" />
+                <TextView
+                    android:text="FIRST CONTACT:"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light" />
+                <TextView
+                    android:text="LAST UPDATE:"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light" />
+                <TextView
+                    android:text="COUNT:"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:text="N/A"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/gpsStatus2"
+                    android:textColor="#8BC34A" />
+                <TextView
+                    android:text="N/A"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/gpsAccuracy2" />
+                <TextView
+                    android:text="N/A"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/gpsLatitude2" />
+                <TextView
+                    android:text="N/A"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/gpsLongitude2" />
+                <TextView
+                    android:text="N/A"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/gpsSpeed2" />
+                <TextView
+                    android:text="N/A"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/gpsTime2" />
+                <TextView
+                    android:text="N/A"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/gpsContact2" />
+                <TextView
+                    android:text="N/A"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/gpsLastUpdate2" />
+                <TextView
+                    android:text="N/A"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/gpsCount2" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:background="#EEEEEE"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="fill_parent">
+        <TextView
+            android:text="Cell Tower Triangulation"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:fontFamily="sans-serif-light"
+            android:textSize="17dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:text="STATUS:"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light" />
+                <TextView
+                    android:text="ACCURACY:"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light" />
+                <TextView
+                    android:text="LATITUDE:"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light" />
+                <TextView
+                    android:text="LONGITUDE:"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light" />
+                <TextView
+                    android:text="SPEED:"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light" />
+                <TextView
+                    android:text="TIME ELAPSED:"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light" />
+                <TextView
+                    android:text="FIRST CONTACT:"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light" />
+                <TextView
+                    android:text="LAST UPDATE:"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light" />
+                <TextView
+                    android:text="COUNT:"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:text="N/A"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/networkStatus"
+                    android:textColor="#8BC34A" />
+                <TextView
+                    android:text="N/A"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/networkAccuracy" />
+                <TextView
+                    android:text="N/A"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/networkLatitude" />
+                <TextView
+                    android:text="N/A"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/networkLongitude" />
+                <TextView
+                    android:text="N/A"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/networkSpeed" />
+                <TextView
+                    android:text="N/A"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/networkTime" />
+                <TextView
+                    android:text="N/A"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/networkContact" />
+                <TextView
+                    android:text="N/A"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/networkLastUpdate" />
+                <TextView
+                    android:text="N/A"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/networkCount" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

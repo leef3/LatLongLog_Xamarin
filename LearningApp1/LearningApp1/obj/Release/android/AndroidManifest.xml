@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="LearningApp1.LearningApp1" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+  <uses-sdk android:minSdkVersion="11" />
+  <application android:label="LearningApp1" android:icon="@drawable/icon" android:theme="@android:style/Theme.Holo.Light.NoActionBar" android:name="mono.android.app.Application">
+    <activity android:label="AccelerometerTest" android:name="md5e0eaf1cd064dac22951f4a5b7eb8a1f7.AccelerometerTest" />
+    <activity android:label="GPSNetTest" android:name="md5e0eaf1cd064dac22951f4a5b7eb8a1f7.GPSNetTest" />
+    <activity android:icon="@drawable/icon" android:label="LearningApp1" android:name="md5e0eaf1cd064dac22951f4a5b7eb8a1f7.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="MotionStopTest" android:name="md5e0eaf1cd064dac22951f4a5b7eb8a1f7.MotionStopTest" />
+    <service android:name="md5e0eaf1cd064dac22951f4a5b7eb8a1f7.TimeService" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="LearningApp1.LearningApp1.mono.MonoRuntimeProvider.__mono_init__" />
+  </application>
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+</manifest>

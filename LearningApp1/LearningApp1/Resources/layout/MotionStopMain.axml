@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:keepScreenOn="true"
+    android:minHeight="25px"
+    android:id="@+id/overallLayout">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/blackout" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:background="#EEEEEE"
+        android:layout_margin="20dp"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:id="@+id/subLayout1">
+        <TextView
+            android:text="Speed Info"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:fontFamily="sans-serif-light"
+            android:textSize="17dp"
+            android:id="@+id/title1" />
+        <TextView
+            android:text="1 mph = 0.44704 m/s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginLeft="10dp" />
+        <TextView
+            android:text="5 mph = 2.2352 m/s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginLeft="10dp" />
+        <TextView
+            android:text="Cutoff is currently set at: 2 m/s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginLeft="10dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Current Speed: "
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:fontFamily="sans-serif-light"
+                android:textSize="17dp" />
+            <TextView
+                android:text="N/A"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:fontFamily="sans-serif-light"
+                android:id="@+id/currentSpeed"
+                android:textSize="17dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:background="#EEEEEE"
+        android:layout_margin="20dp"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:id="@+id/subLayout2">
+        <TextView
+            android:text="Accelerometer Data"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:fontFamily="sans-serif-light"
+            android:textSize="17dp"
+            android:id="@+id/title2" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:text="X - Axis:"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light" />
+                <TextView
+                    android:text="Y - Axis:"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light" />
+                <TextView
+                    android:text="Z - Axis:"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light" />
+                <TextView
+                    android:text="Threshold:"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:text="N/A"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/blackoutAccelX"
+                    android:textColor="#8BC34A" />
+                <TextView
+                    android:text="N/A"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/blackoutAccelY" />
+                <TextView
+                    android:text="N/A"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/blackoutAccelZ" />
+                <TextView
+                    android:text="N/A"
+                    android:layout_margin="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/threshold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:background="#EEEEEE"
+        android:layout_margin="20dp"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:id="@+id/subLayout3">
+        <TextView
+            android:text="Source Selection"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:fontFamily="sans-serif-light"
+            android:textSize="17dp"
+            android:id="@+id/title3" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Blackout Based on GPS"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light" />
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gpsBlackoutSwitch" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Blackout Based on Accelerometer"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light" />
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/accelBlackoutSwitch"
+                android:enabled="false" />
+        </LinearLayout>
+        <TextView
+            android:text="DAY"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ambientLight"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</LinearLayout>
